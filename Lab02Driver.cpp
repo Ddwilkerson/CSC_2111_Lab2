@@ -7,18 +7,19 @@
 int main()
 {
    ReadFile* rf = new ReadFile("cds.txt");
-   WriteFile wf = new WriteFile("out.txt");
+   WriteFile* wf = new WriteFile("out.txt");
 
    while(!rf->eof())
    {
       String* line = rf->readLine();
-      wf.writeLine(line);
+      wf->writeLine(line);
       delete line;
    }
 
    rf->close();
-   wf.close();
+   wf->close();
    delete rf;
+   delete wf;
 
    return 0;
 }
