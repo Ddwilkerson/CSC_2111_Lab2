@@ -9,6 +9,8 @@ int main()
    ReadFile* rf = new ReadFile("cds.txt");
    WriteFile* wf = new WriteFile("out.txt");
 
+   //Test Comment
+   
    while(!rf->eof())
    {
       String* line = rf->readLine();
