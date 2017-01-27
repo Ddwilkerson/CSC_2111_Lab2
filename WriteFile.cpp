@@ -1,3 +1,8 @@
+/*
+Editor: Dakota Wilkerson
+Date: 1/27/17
+Edtiting: Changing WriteFile Struct to WriteFile Class
+*/
 #include "WriteFile.h"
 #include <sstream>
 
