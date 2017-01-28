@@ -14,8 +14,7 @@ WriteFile::WriteFile(const char* file_name)
 
 void WriteFile::~WriteFile()
 {
-   this.close();
-   delete output_file;
+   delete WriteFile;
 }
 
 void WriteFile::close()
